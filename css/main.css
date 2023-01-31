@@ -1,0 +1,192 @@
+/* header */
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 999;
+    display: flex;
+    padding: 0 300px;
+    justify-content: space-between;
+    line-height: 100px;
+    background: #fff;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+#header h1 {
+    font-size: 0;
+}
+
+#header img {
+    position: relative;
+    width: 150px;
+    height: 80px;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 30px;
+}
+
+#header .gnb>ul>li>a {
+    padding: 0 20px;
+}
+
+#header .gnb>ul>li {
+    position: relative;
+}
+
+#header .gnb>ul>li a {
+    display: block;
+    text-align: center;
+}
+
+#header .gnb>ul>li .submenu {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    line-height: 35px;
+    width: 130px;
+    font-size: 15px;
+    font-weight: 500;
+
+    transform: translate(-50%, 0);
+    margin: 20px 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#header .gnb:hover>ul>li .submenu {
+    height: 180px;
+
+}
+
+#header .gnb:hover>ul>li .submenu a {
+    color: #fff;
+}
+
+#header .gnb::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: rgba(27, 26, 26, 0.9);
+    border-top: 1px solid #ddd;
+    transition: 0.5s;
+}
+
+#header:hover .gnb::before {
+    height: 180px;
+}
+
+
+
+
+
+
+
+/* mainVisual_mainSlide */
+.mainVisual {
+    position: relative;
+    padding: 0;
+}
+
+.mainVisual .mainSlide figure {
+    position: relative;
+    height: 570px;
+}
+
+.mainVisual .mainSlide .itm01 {
+    background: url(../images/main01.jpg)no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm02 {
+    background: url(../images/main02.png)no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .slick-arrow {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background: none;
+    border: none;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-top: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+}
+
+
+.mainVisual .mainSlide .slick-prev {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -850px;
+
+}
+
+.mainVisual .mainSlide .slick-next {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 850px;
+}
+
+
+
+/* main_slide_dots */
+.mainVisual .main_slide_dots {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    height: 1px;
+    width: 5px;
+    font-size: 0;
+    transform: translate(-50%, 0);
+    display: flex;
+    gap: 10px;
+}
+
+.mainVisual .main_slide_dots li button {
+    position: relative;
+    background: #777;
+    color: #fff;
+    height: 5px;
+    width: 50px;
+    padding: 0;
+    font-size: 0;
+    border: none;
+
+}
+
+.mainVisual .main_slide_dots li.on button {
+    background: hsl(0, 88%, 45%);
+}
+
+
+
+
+/* Sub_visual */
+
+
+.Sub_visual {
+    position: relative;
+
+}
+
+.Sub_visual .sub_slide figure {
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+.Sub_visual .itm03 {
+    background: url(../images/main_appbanner_2022.jpg)no-repeat center center/cover;
+
+}
