@@ -24,6 +24,17 @@ $(function () {
 
     });
 
+    // 슬라이드 탭 부분
+    $('#slideTab .menu>li').on('click', function () {
+        var idx = $(this).index();
+        console.log(111)
+        $('#slideTab .con>div').removeClass('on');
+        $('#slideTab .con>div').eq(idx).addClass('on');
+
+        $('#slideTab .menu>li').removeClass('on');
+        $(this).addClass('on');
+    })
+
 
 
 

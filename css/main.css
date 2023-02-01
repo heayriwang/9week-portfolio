@@ -190,3 +190,189 @@
     background: url(../images/main_appbanner_2022.jpg)no-repeat center center/cover;
 
 }
+
+
+/* slideTab */
+#slideTab {
+    position: relative;
+    background: url(../images/bg_menu2.jpg);
+    height: 450px;
+    padding: 200px 0 0 0;
+}
+
+#slideTab h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: -100px 0 0 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 1px #333;
+
+}
+
+#slideTab .inner {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 0 #333;
+
+}
+
+#slideTab .menu {
+    display: flex;
+    justify-content: center;
+    margin: 130px auto 100px auto;
+    gap: 30px;
+}
+
+#slideTab .menu button {
+    background: transparent;
+    border: none;
+}
+
+#slideTab .menu>li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: tomato;
+    margin: 5px auto;
+}
+
+#slideTab .menu>li.on::after {
+    width: 30px;
+    transition: 0.5s;
+}
+
+#slideTab .con>div {
+    visibility: hidden;
+    height: 0;
+}
+
+#slideTab .con>div.on {
+    visibility: visible;
+    height: auto;
+}
+
+#slideTab .con .sl01 {
+    position: relative;
+
+
+
+}
+
+#slideTab .con .bn {
+    padding: 50px 0 0 0;
+}
+
+#slideTab .con .bn p {
+    margin: 100px 0 0 0;
+}
+
+#slideTab .con .bp {
+    margin: -10px 0 0 0;
+
+}
+
+#slideTab .con .bp .sl01 {
+    display: flex;
+
+    margin: 300px 0 0 0;
+}
+
+#slideTab .sl01 .bp {
+    display: flex;
+
+
+}
+
+#slideTab .sl01 .bp p {
+    color: #333;
+    text-shadow: 0 0 0 #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#slideTab .con .bp .sl02 {
+    display: flex;
+
+}
+
+#slideTab .sl02 .bp {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#slideTab .sl02 .bp p {
+    color: #333;
+    text-shadow: 0 0 0 #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#slideTab .con .bp .sl03 {
+    display: flex;
+}
+
+#slideTab .sl03 .bp {
+    display: flex;
+}
+
+#slideTab .sl03 .bp p {
+    color: #333;
+    text-shadow: 0 0 0 #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#slideTab .con .bp .sl04 {
+    display: flex;
+
+}
+
+#slideTab .sl04 .bp {
+    display: flex;
+    width: 120%;
+    margin: 0 auto;
+}
+
+#slideTab .sl04 .bp p {
+    color: #333;
+    text-shadow: 0 0 0 #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+#slideTab .con .bp .sl05 {
+    display: flex;
+}
+
+#slideTab .sl05 .bp {
+    display: flex;
+    width: 120%;
+}
+
+#slideTab .sl05 .bp p {
+    color: #333;
+    text-shadow: 0 0 0 #fff;
+
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#slideTab .con figure {
+    padding: 0 15px;
+
+}
+
+#slideTab .slide {
+    margin: 0 -15px;
+}
