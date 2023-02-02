@@ -36,7 +36,14 @@ $(function () {
     })
 
 
-
+    // bgndVideo 동영상
+    $("#bgndVideo").YTPlayer({
+        videoURL: 'hCNuCtN-WD8',
+        containment: '.mainYoutubeBg',
+        showControls: false,
+        mute: true,
+        playOnlyIfVisible: true,
+    });
 
 
 
